@@ -90,4 +90,12 @@ public class CalculatorTest {
 
         assertEquals(6, calculator.add("//[***]\n1***2***3"));
     }
+
+    // Step 8
+    @Test
+    @DisplayName("Allowing multiple delimiters")
+    void allowingMultipleDelimiters() {
+
+        assertEquals(6, calculator.add("\n1*2%3"));
+    }
 }
