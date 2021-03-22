@@ -9,13 +9,11 @@ public class Calculator {
         String[] arrayNumbers;
         int addingNumbers = 0;
 
-        if (numbers.equals("")) {
-            return 0;
-        }
-
-        arrayNumbers = numbers.split("[\n,]");
+        arrayNumbers = numbers.split("[/\n;,]");
         for (String arrayNumber : arrayNumbers) {
-            addingNumbers += Integer.parseInt(arrayNumber);
+            if (!arrayNumber.isEmpty()) {
+                addingNumbers += Integer.parseInt(arrayNumber);
+            }
         }
         return addingNumbers;
     }
