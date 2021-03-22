@@ -13,7 +13,9 @@ public class Calculator {
 
         arrayNumbers = numbers.split("[/\n;,]");
         for (String number : arrayNumbers) {
-            if (!number.isEmpty()) {
+
+            if (!number.isEmpty() && Integer.parseInt(number) <= 1000) {
+
                 addingNumbers += Integer.parseInt(number);
 
                 if (Integer.parseInt(number) < 0) {
