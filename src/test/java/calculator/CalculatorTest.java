@@ -98,4 +98,12 @@ public class CalculatorTest {
 
         assertEquals(6, calculator.add("\n1*2%3"));
     }
+
+    // Step 9
+    @Test
+    @DisplayName("Multiple delimiters with any length")
+    void multipleDelimitersWithAnyLength() {
+
+        assertEquals(6, calculator.add("1//,,,%%%2,3"));
+    }
 }
