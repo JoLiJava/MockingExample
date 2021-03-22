@@ -13,7 +13,7 @@ public class Calculator {
             return 0;
         }
 
-        arrayNumbers = numbers.split(",");
+        arrayNumbers = numbers.split("[\n,]");
         for (String arrayNumber : arrayNumbers) {
             addingNumbers += Integer.parseInt(arrayNumber);
         }
