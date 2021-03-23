@@ -11,7 +11,9 @@ public class Calculator {
         boolean illegalException = false;
         StringBuilder negativeNumbers = new StringBuilder();
 
-        arrayNumbers = numbers.split("[/\n;\\]\\[,*%]");
+        // arrayNumbers = numbers.split("[/\n;\\]\\[,*%]");
+        arrayNumbers = numbers.split("[^0-9-]");
+
         for (String number : arrayNumbers) {
 
             if (!number.isEmpty() && Integer.parseInt(number) <= 1000) {
