@@ -41,6 +41,7 @@ public class InMemoryVersionOfEmployeeRepositoryTest {
         Employee employee1 = new Employee("1", 2000);
         Employee employee2 = new Employee("0", 3000);
         inMemoryVersionOfEmployeeRepository.save(employee1);
+        
         inMemoryVersionOfEmployeeRepository.save(employee2);
 
 
